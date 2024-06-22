@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: #DA8139;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 70%;
+}
+
+nav a {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 10000px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: white;
+    
+}
+body {
+    background-color: #90C1DD;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 10000px;
+    font-size: 80px;
+    color: white;
+    font-style: normal;
+    text-align: center;
+}
+
+.slider-box {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide  10s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide{
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    .slider-box {
+        width: 100%;
+    }
+} 
+.caja {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #DA8139;
+    padding: 5px;   
+}
+
+.footer-links {
+    text-align: center;
+}
+.footer-links h2 {
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 10000px;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.social-link a {
+    font-size: 40px;
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0px;
+    text-align: center;
+    line-height:  40 px;
+    border-radius: 50px;
+    color: #DA8139;
+    transition:  all .5s ease;
+}
+
+.copy {
+    text-align: center;
+    color: white;
+}
+
+.social-link a:hover {
+    background-color: #90C1DD;
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align:  center;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
